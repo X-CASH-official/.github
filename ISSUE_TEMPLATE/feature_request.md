@@ -1,6 +1,8 @@
+# ✨ Feature Request
+
 <!--
 PLEASE DON'T DISCLOSE SECURITY-RELATED ISSUES PUBLICLY.
-If you discover a security vulnerability, please send an e-mail to developers@xcash.foundation.
+If you discover a security vulnerability, please send an e-mail to security@xcash.foundation.
 All security vulnerabilities will be promptly addressed.
 -->
 
