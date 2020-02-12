@@ -1,175 +1,157 @@
-# 🤝 Contributing to X-Cash Foundation
+# 🤝 Contributing to the X-Cash Foundation
 
-Welcome ! 👋 Thank you for thinking of contributing to the X-Cash Foundation.
-We will be glad to have you on board.
+Welcome ! 🙏 Thank you for proposing to contribute to the X-Cash Foundation
 
-When contributing to this repository, please first discuss the change you wish to
-make via issue, email (developers@xcash.foundation), or any other method with 
-the owners of this repository before making a change.
+Further down are presented a set of guidelines to help you contribute to the X-Cash and its derived programs, hosted in the [X-Cash Foundation](https://github.com/X-CASH-official) organization on GitHub.
 
-Please note we have a code of conduct, please follow it in all your interactions with the project.
+This set of guidelines is not mandatory, although it will greatly help the organizations and maintainers job and keep the contributing environment clean 🧼.
 
-## General guidelines
+#### Table Of Contents
 
-* Comments are encouraged. Especially if a piece of code is hard to grasp to a maintainer.
-* If you are adding a new feature, the feature was previously discussed with the team.
-* Everything you added, modified or removed is covered by tests and has sufficient coverage
+  * [Code of Conduct](#code-of-conduct)
+  * [Before Getting Started](#before-getting-started)
+  * [How Can I Contribute?](#how-can-i-contribute-)
+    + [Reporting Bugs 🐛](#reporting-bugs---)
+    + [Suggesting New Features/Enhancements 🌟](#suggesting-new-features-enhancements---)
+    + [Code Contribution & Bounties 👨‍💻](#code-contribution---bounties------)
+    + [Pull Requests](#pull-requests)
+  * [Commit Styleguide](#commit-styleguide)
 
-Patches, bug fixes and new features should be added from 
-`feat/*` and `bug/` branches.
 
-Patches should be self contained. A good rule of thumb is to have
-one patch per separate issue, feature, or logical change. Also, no
-other changes, such as random whitespace changes, reindentation,
-or fixing typoes, spelling, or wording, unless user visible.
-Following the code style of the particular chunk of code you're
-modifying is encouraged. Proper squashing should be done (eg, if
-you're making a buggy patch, then a later patch to fix the bug,
-both patches should be merged).
+## Code of Conduct
 
-If you've made random unrelated changes (either because your editor
-is annoying or you made them for other reasons), you can select
-what changes go into the coming commit using git add -p, which
-walks you through all the changes and asks whether or not to
-include this particular change. This helps create clean patches
-without any irrelevant changes. git diff will show you the changes
-in your tree. git diff --cached will show what is currently staged
-for commit. As you add hunks with git add -p, those hunks will
-"move" from the git diff output to the git diff --cached output,
-so you can see clearly what your commit is going to look like.
+The project is govered by the [X-Cash Foundation Code of Conduct](https://github.com/X-CASH-official/.github/blob/master/CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to the project team at [developers@xcash.foundation](mailto:developers@xcash.foundation).
 
-## Commits and pull requests
+## Before Getting Started 
 
-Commit messages should be sensible. When creating a new commit, please
-follow the guidelines from the and use `git commit` without the `-m` tag.
+When contributing to this repository, please first discuss the change you wish to make via issues, email to [developers@xcash.foundation](mailto:developers@xcash.foundation), or any other method with the owners of this repository before making a change.
 
-When submitting a pull request on Github, make sure your branch is
-rebased. No merge commits nor stray commits from other people in
-your submitted branch, please. You may be asked to rebase if there
-are conflicts (even trivially resolvable ones).
+You are also expected to check the current and previously closed issue for duplicate before opening a new one. 
 
-You may merge the Pull Request in once you have the sign-off of two other
-developers, or if you do not have permission to do that, you may request
-the second reviewer to merge it for you.
+## How Can I Contribute? 
 
-PGP signing commits is strongly encouraged. That should explain why
-the previous paragraph is here.
+### Reporting Bugs 🐛
 
-# [Code of Conduct (22/C4.1)](http://rfc.zeromq.org/spec:22)
+First of all, you will need to determine which program repository relates to your bug (do not post an issue on [xcash-core](https://github.com/X-CASH-official/xcash-core) if you are experiencing a problem with the [desktop-wallet](https://github.com/X-CASH-official/desktop-wallet)).
 
-## License
+When you are creating a bug report, please [include as many details as possible](#submit-a-good-bug-report). Fill out [the required template](https://github.com/X-CASH-official/.github/blob/master/ISSUE_TEMPLATE/bug_report.md), the information it asks for helps us resolve issues faster.
 
-Copyright (c) 2009-2015 Pieter Hintjens.
-Copyright (c) 2018-2020 X-Cash Foundation.
+#### Before Submitting A Bug Report
 
-This Specification is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
+Before creating but reports, please check the repository's issues to see if the problem has already been reported. 
 
-This Specification is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+> **Note:** If you find a **Closed** issue that seems like it is the same thing that you're experiencing, open a new issue and include a link to the original issue in the body of your new one.
 
-You should have received a copy of the GNU General Public License along with this program; if not, see <http://www.gnu.org/licenses>.
+#### Submit A Good Bug Report
 
-## Language
+Bugs are tracked alongside new features request as [GitHub issues](https://guides.github.com/features/issues). After you have determined which repository your bug is relating to, create an issue on that repository and provide the necessary information by filling in [the required template](https://github.com/X-CASH-official/.github/blob/master/ISSUE_TEMPLATE/bug_report.md).
 
-The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in RFC 2119.
+Explain the problem and include as many details as possible to help the project team to reproduce the problem: 
 
-The "X-Cash Foundation Maintainer Team" is defined in this document as the following users:
-- [zachhildreth](https://github.com/zachhildreth)
-- [plbgnt](https://github.com/plbgnt)
+* **Use a clear and descriptive title** for the issue to identify the problem.
+* **Describe the exact steps which reproduce the problem** in as many details as possible.
+* **Provide specific examples to demonstrate the steps**. Include links to files or GitHub projects, or copy/pasteable snippets, which you use in those examples. If you're providing snippets in the issue, use [Markdown code blocks](https://help.github.com/articles/markdown-basics/#multiple-lines).
+* **Describe the behavior you observed after following the steps** and point out what exactly is the problem with that behavior.
+* **Explain which behavior you expected to see instead and why.**
+* **Include screenshots** if it helps describing the issue.
+* **If the problem wasn't triggered by a specific action**, describe what you were doing before the problem happened.
 
-## Goals
+### Suggesting New Features/Enhancements 🌟
 
-C4 is meant to provide a reusable optimal collaboration model for open source software projects. It has these specific goals:
+First of all, you will need to determine which program repository would profit from the proposed enhancement. 
 
-- To maximize the scale and diversity of the community around a project, by reducing the friction for new Contributors and creating a scaled participation model with strong positive feedbacks;
-- To relieve dependencies on key individuals by separating different skill sets so that there is a larger pool of competence in any required domain;
-- To allow the project to develop faster and more accurately, by increasing the diversity of the decision making process;
-- To support the natural life cycle of project versions from experimental through to stable, by allowing safe experimentation, rapid failure, and isolation of stable code;
-- To reduce the internal complexity of project repositories, thus making it easier for Contributors to participate and reducing the scope for error;
-- To enforce collective ownership of the project, which increases economic incentive to Contributors and reduces the risk of hijack by hostile entities.
+When you are creating a new feature request, please [include as many details as possible](#submit-a-good-feature-request). Fill out [the required template](https://github.com/X-CASH-official/.github/blob/master/ISSUE_TEMPLATE/feature_request.md), the information it asks for helps us see clearly what you are referring to.
 
-## Design
+#### Before Submitting A New Feature Request
 
-### Preliminaries
+Before creating a new feature request, please check the repository's issues to see if the feature has already been requested or if it's already integrated.
 
-- The project MUST use the git distributed revision control system.
-- The project MUST be hosted on github.com or equivalent, herein called the "Platform".
-- The project MUST use the Platform issue tracker.
-  - Non-GitHub example:
-    - "Platform" could be a vanilla git repo and Trac hosted on the same machine/network.
-    - The Platform issue tracker would be Trac.
-- The project SHOULD have clearly documented guidelines for code style.
-- A "Contributor" is a person who wishes to provide a patch, being a set of commits that solve some clearly identified problem.
-- A "Maintainer" is a person who merges patches to the project. Maintainers are not developers; their job is to enforce process.
-- Contributors MUST NOT have commit access to the repository unless they are also Maintainers.
-- Maintainers MUST have commit access to the repository.
-- Everyone, without distinction or discrimination, MUST have an equal right to become a Contributor under the terms of this contract.
+> **Note:** If you plan to work on a new feature, please make sure it has been discussed with the core team
 
-### Licensing and ownership
+#### Submit A Good Feature Request
 
-- The project MUST use a share-alike license, such as BSD-3, the GPLv3 or a variant thereof (LGPL, AGPL), or the MPLv2.
-- All contributions to the project source code ("patches") MUST use the same license as the project.
-- All patches are owned by their authors. There MUST NOT be any copyright assignment process.
-- The copyrights in the project MUST be owned collectively by all its Contributors.
-- Each Contributor MUST be responsible for identifying themselves in the project Contributor list.
+Feature request are tracked alongside bug reports as [GitHub issues](https://guides.github.com/features/issues). After you have determined which repository your feature request is relating to, create an issue on that repository and provide the necessary information by filling in [the required template](https://github.com/X-CASH-official/.github/blob/master/ISSUE_TEMPLATE/feature_request.md).
 
-### Patch requirements
+Explain the problem and include as many details as possible to help the project team to reproduce the problem: 
 
-- Maintainers MUST have a Platform account and SHOULD use their real names or a well-known alias.
-- Contributors SHOULD have a Platform account and MAY use their real names or a well-known alias.
-- A patch SHOULD be a minimal and accurate answer to exactly one identified and agreed problem.
-- A patch MUST adhere to the code style guidelines of the project if these are defined.
-- A patch MUST adhere to the "Evolution of Public Contracts" guidelines defined below.
-- A patch MUST NOT include non-trivial code from other projects unless the Contributor is the original author of that code.
-- A patch MUST compile cleanly and pass project self-tests on at least the principle target platform.
-- A patch commit message SHOULD consist of a single short (less than 50 character) line summarizing the change, optionally followed by a blank line and then a more thorough description.
-- A "Correct Patch" is one that satisfies the above requirements.
+* **Use a clear and descriptive title** for the issue to identify the suggestion.
+* **Describe the current behavior** and **explain which behavior you expected to see instead** and why.
+* **Include screenshots** to help describe the suggested improvment.
+* **Describe a possible solution** if you have an idea already. 
 
-### Development process
+### Code Contribution & Bounties 👨‍💻
 
-- Change on the project MUST be governed by the pattern of accurately identifying problems and applying minimal, accurate solutions to these problems.
-- To request changes, a user SHOULD log an issue on the project Platform issue tracker.
-- The user or Contributor SHOULD write the issue by describing the problem they face or observe.
-- The user or Contributor SHOULD seek consensus on the accuracy of their observation, and the value of solving the problem.
-- Users MUST NOT log feature requests, ideas, or suggestions unrelated to X-Cash code or X-Cash's dependency code or X-Cash's potential/future dependency code or research which successfully implements X-Cash.
-- Users MUST NOT log any solutions to problems (verifiable or hypothetical) of which are not explicitly documented and/or not provable and/or cannot be reasonably proven.
-- Thus, the release history of the project MUST be a list of meaningful issues logged and solved.
-- To work on an issue, a Contributor MUST fork the project repository and then work on their forked repository.
-- To submit a patch, a Contributor MUST create a Platform pull request back to the project.
-- A Contributor MUST NOT commit changes directly to the project.
-- To discuss a patch, people MAY comment on the Platform pull request, on the commit, or elsewhere.
-- To accept or reject a patch, a Maintainer MUST use the Platform interface.
-- Maintainers SHOULD NOT merge their own patches except in exceptional cases, such as non-responsiveness from other Maintainers for an extended period (more than 30 days) or unless urgent as defined by the X-Cash Foundation Maintainers Team.
-- Maintainers MUST NOT make value judgments on correct patches unless the Maintainer (as may happen in rare circumstances) is a core code developer.
-- Maintainers MUST NOT merge pull requests in less than 168 hours (1 week) unless deemed urgent by at least 2 people from the X-Cash Foundation Maintainer Team.
-- The Contributor MAY tag an issue as "Ready" after making a pull request for the issue.
-- The user who created an issue SHOULD close the issue after checking the patch is successful.
-- Maintainers SHOULD ask for improvements to incorrect patches and SHOULD reject incorrect patches if the Contributor does not respond constructively.
-- Any Contributor who has value judgments on a correct patch SHOULD express these via their own patches.
-- Maintainers MAY commit changes to non-source documentation directly to the project.
+You will be able to contribute to all issues, but some of them will be associated with a bounty. These issues will have the `bounty` label, and will be assigned to a contributor after the project team has decided following the [bounty assignation process](). 
 
-### Creating stable releases
+Please refer to the **[Builder's Program]()** for mor information on how to contribute to these bounties.
 
-- The project MUST have one branch ("master") that always holds the latest in-progress version and SHOULD always build.
-- The project MUST NOT use topic branches for any reason. Personal forks MAY use topic branches.
-- To make a stable release someone MUST fork the repository by copying it and thus become maintainer of this repository.
-- Forking a project for stabilization MAY be done unilaterally and without agreement of project maintainers.
-- A patch to a stabilization project declared "stable" MUST be accompanied by a reproducible test case.
+### Pull Requests
 
-### Evolution of public contracts
+Please follow these steps to have your contribution considered by the maintainers:
 
-- All Public Contracts (APIs or protocols) MUST be documented.
-- All Public Contracts SHOULD have space for extensibility and experimentation.
-- A patch that modifies a stable Public Contract SHOULD not break existing applications unless there is overriding consensus on the value of doing this.
-- A patch that introduces new features to a Public Contract SHOULD do so using new names.
-- Old names SHOULD be deprecated in a systematic fashion by marking new names as "experimental" until they are stable, then marking the old names as "deprecated".
-- When sufficient time has passed, old deprecated names SHOULD be marked "legacy" and eventually removed.
-- Old names MUST NOT be reused by new features.
-- When old names are removed, their implementations MUST provoke an exception (assertion) if used by applications.
+1. Follow all instructions in [the template](https://github.com/X-CASH-official/.github/blob/master/PULL_REQUEST_TEMPLATE.md)
+2. Follow the [commit styleguides](#commit-styleguides)
+3. After you submit your pull request, verify that all [status checks](https://help.github.com/articles/about-status-checks/) are passing <details><summary>What if the status checks are failing?</summary>If a status check is failing, and you believe that the failure is unrelated to your change, please leave a comment on the pull request explaining why you believe the failure is unrelated. A maintainer will re-run the status check for you. If we conclude that the failure was a false positive, then we will open an issue to track that problem with our status check suite.</details>
 
-### Project administration
+While the prerequisites above must be satisfied prior to having your pull request reviewed, the reviewer(s) may ask you to complete additional design work, tests, or other changes before your pull request can be ultimately accepted.
 
-- The project founders MUST act as Administrators to manage the set of project Maintainers.
-- The Administrators MUST ensure their own succession over time by promoting the most effective Maintainers.
-- A new Contributor who makes a correct patch MUST be invited to become a Maintainer.
-- Administrators MAY remove Maintainers who are inactive for an extended period of time, or who repeatedly fail to apply this process accurately.
-- Administrators SHOULD block or ban "bad actors" who cause stress and pain to others in the project. This should be done after public discussion, with a chance for all parties to speak. A bad actor is someone who repeatedly ignores the rules and culture of the project, who is needlessly argumentative or hostile, or who is offensive, and who is unable to self-correct their behavior when asked to do so by others.
+## Commit Styleguide
+
+> These guidelines are based from the Angular Convention [commit guideline](https://github.com/angular/angular/blob/master/CONTRIBUTING.md#commit)
+
+Please use the following guidelines to format all your commit. This helps the maintaners quickly gathering what the commit relates, and bring some readibility to the overall project: 
+
+```txt
+<type>: <subject>
+<BLANK LINE>
+<body>
+<BLANK LINE>
+<footer>
+```
+#### `<type>`
+
+The commit title should start with the `<type>`, which can be: 
+* **feat** for features
+* **fix** (bug fix)
+* **docs** (documentation)
+* **style** (formatting, missing semicolons, …)
+* **refactor**
+* **test** (when adding missing tests)
+* **chore** (maintain repository, changed CI configuration, ...)
+
+#### `<subject>`
+
+The commit `<subject>` should follow the following guidelines: 
+
+* Use the imperative, present tense ("change" not "changed" nor "changes")
+* Don't capitalize the first letter
+* Do not end the line with a dot (.)
+* Limit to 50 characters or less
+
+#### `<body>`
+
+The message `<body>` should follow the same guidelines as the [`<subject>`](#subject), with small variations: 
+
+* Use the imperative, present tense ("change" not "changed" nor "changes")
+* Don't capitalize the first letter
+* Do not end the line with a dot (.)
+* **Limit to 72 characters or less**
+* Seperate subject from body with a blank line
+* Explain what and why vs. how
+* Can use multiple lines with "-" for bullet points in body
+
+#### `<footer>`
+
+The `<footer>` should indicate the referenced GitHub issues that this commit closes.
+
+**Commit Message Example:** 
+
+```txt
+fix: add delegate name
+
+- add handler for delegate name
+- fix display behavior for delegate field
+
+fixes issue #1245
+```
+
