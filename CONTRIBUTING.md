@@ -217,4 +217,3 @@ fix: add delegate name
 fixes issue #1245
 ```
 
-
