@@ -79,19 +79,63 @@ Explain the problem and include as many details as possible to help the project 
 * **Include screenshots** to help describe the suggested improvment.
 * **Describe a possible solution** if you have an idea already. 
 
-### Code Contribution & bounties 👨‍💻
+### Code Contribution & Bounties 👨‍💻
 
 While everyone is free to participate in the development and undertake issues, we are proposing bounties to give rewards to some contributions.
 
-These rewarded issues will have a `bounty` tag, and can be undertaken by anyone in the community after the team assigned the issue through the [bounty assignation process](#bounty-assignation-process). 
+These rewarded issues will have a `bounty` tag, and can be undertaken by anyone in the community after the team assigned the issue through the [issue assignation process](#issue-assignation-process). 
+
+The process of code contribution will go as follow: 
+- Creating an issue for bug report or a feature request;
+- Assigning the issue to a contributor;
+- Branching from the `develop` branch to work on the feature/bug fix;
+- Merging back to `develop` after the team review.
+
+#### Issue Assignation Process
+
+When an issue is submitted to the repository, the team will review it and assign it a `tag` to provide an easy reading and classification. An issue that is not being worked on will have the tag `Status: Open`. 
+
+Contributors that wish to start working on an issue will have to write a short application on said issue discussion thread to describe how they plan on undertaking the bug/feature.
+
+The application message should contain: 
+- A short summary of the contributor skills;
+- A broad idea of the process/method to correct the issue.
+
+An X-Cash Foundation team member will then review the application and assign the issue to **one contributor**.
+
+> To avoid redundancy and people working on the same issue, please refrain to work on bug/feature until the issue has been attributed to you.
+
+#### Branching styleguide 
+
+Once the issue has been [assigned](#issue-assignation-process), the contributor can start working locally on its own branch of the repository.
+
+The contributor will need to create a new branch based of the `develop` branch of the current repository. 
+
+The new branch should follow the X-Cash Foundation naming convention:
+
+```txt
+<type>/<subject>
+```
+
+where `<type>` can be: 
+* **feat** for features
+* **fix** (bug fix)
+* **docs** (documentation)
+* **style** (formatting, missing semicolons, …)
+* **refactor**
+* **test** (when adding missing tests)
+* **chore** (maintain repository, changed CI configuration, ...)
+
+And `<subject>` is the title or a 3 words maximum summary of the issue.
+
+**Branch Name Example:** 
+
+```txt
+feat/currency-conversion
+```
 
 
-
-#### Bounty Assignation Process
-
-Please refer to the **[Builder's Program]()** for more information on how to contribute to these bounties.
-
-### Pull Requests
+#### Pull Requests
 
 > **Before creating a PR:** Make sure that your pull request is fixing and issue or is relating to a feature request listed in the repository's issues. If not, please create an issue to on your 
 
@@ -109,15 +153,15 @@ While the prerequisites above must be satisfied prior to having your pull reques
 
 > This is not mandatory but highly recommended for every project you are working on.
 
-Please sign your commits when you are pushing new changes to your branch. You can follow a tutorial [**here**](https://help.github.com/en/github/authenticating-to-github/signing-commits)
+Please sign your commits when you are pushing new changes to your branch. You can follow a tutorial [**here**](https://help.github.com/en/github/authenticating-to-github/signing-commits).
 
-When you sign your Git commit, you can prove that the code you submitted came from you and wasn't altered while you were transferring it. You also can prove that you submitted the code and not someone else.
+When you sign your commit, you can prove that the code you submitted came from you and wasn't altered while you were transferring it. You also can prove that you submitted the code and not someone else.
 
 ### Writing Comprehensive Commits
 
 > These guidelines are based on the Angular Convention [commit guideline](https://github.com/angular/angular/blob/master/CONTRIBUTING.md#commit)
 
-Please use the following guidelines to format all your commit. This helps the maintaners quickly gathering what the commit relates, and bring some readibility to the overall project: 
+Please use the following guidelines to format all your commit. This helps the maintaners quickly gathering what the commit relates to, and bring some readibility to the overall project: 
 
 ```txt
 <type>: <subject>
@@ -172,4 +216,5 @@ fix: add delegate name
 
 fixes issue #1245
 ```
+
 
