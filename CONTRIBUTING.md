@@ -79,9 +79,15 @@ Explain the problem and include as many details as possible to help the project 
 * **Include screenshots** to help describe the suggested improvment.
 * **Describe a possible solution** if you have an idea already. 
 
-### Code Contribution & Bounties 👨‍💻
+### Code Contribution & bounties 👨‍💻
 
-You will be able to contribute to all issues, but some of them will be associated with a bounty. These issues will have the `bounty` tag, and will be assigned to a contributor after the project team has decided following the [bounty assignation process](). 
+While everyone is free to participate in the development and undertake issues, we are proposing bounties to give rewards to some contributions.
+
+These rewarded issues will have a `bounty` tag, and can be undertaken by anyone in the community after the team assigned the issue through the [bounty assignation process](#bounty-assignation-process). 
+
+
+
+#### Bounty Assignation Process
 
 Please refer to the **[Builder's Program]()** for more information on how to contribute to these bounties.
 
