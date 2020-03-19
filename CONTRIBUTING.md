@@ -2,9 +2,9 @@
 
 Welcome ! 🙏 Thank you for proposing to contribute to the X-Cash Foundation
 
-Further down are presented a set of guidelines to help you contribute to the X-Cash and its derived programs, hosted in the [X-Cash Foundation](https://github.com/X-CASH-official) organization on GitHub.
+Further down are presented a set of guidelines to help you contribute to X-Cash and its derived programs, hosted in the [X-Cash Foundation](https://github.com/X-CASH-official) organization on GitHub.
 
-This set of guidelines is not mandatory, although it will greatly help the organizations and maintainers job and keep the contributing environment clean 🧼.
+> This set of guidelines is not mandatory, although it will greatly help the organizations and maintainers job and keep the contributing environment clean 🧼.
 
 #### Table Of Contents
 
@@ -20,11 +20,11 @@ This set of guidelines is not mandatory, although it will greatly help the organ
 
 ## Code of Conduct
 
-The project is govered by the [X-Cash Foundation Code of Conduct](https://github.com/X-CASH-official/.github/blob/master/CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to the project team at [developers@xcash.foundation](mailto:developers@xcash.foundation).
+The project is governed by the [X-Cash Foundation Code of Conduct](https://github.com/X-CASH-official/.github/blob/master/CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to the project team at [developers@xcash.foundation](mailto:developers@xcash.foundation).
 
 ## Before Getting Started 
 
-When contributing to this repository, please first discuss the change you wish to make via issues, email to [developers@xcash.foundation](mailto:developers@xcash.foundation), or any other method with the owners of this repository before making a change.
+When contributing to any X-Cash Foundation repository, please first discuss the change you wish to make via issues, email to [developers@xcash.foundation](mailto:developers@xcash.foundation), or any other method with the owners of this repository before making a change.
 
 You are also expected to check the current and previously closed issue for duplicate before opening a new one. 
 
@@ -34,7 +34,7 @@ You are also expected to check the current and previously closed issue for dupli
 
 First of all, you will need to determine which program repository relates to your bug (do not post an issue on [xcash-core](https://github.com/X-CASH-official/xcash-core) if you are experiencing a problem with the [desktop-wallet](https://github.com/X-CASH-official/desktop-wallet)).
 
-When you are creating a bug report, please [include as many details as possible](#submit-a-good-bug-report). Fill out [the required template](https://github.com/X-CASH-official/.github/blob/master/ISSUE_TEMPLATE/bug_report.md), the information it asks for helps us resolve issues faster.
+When you are creating a bug report, please [include as many details as possible](#submit-a-good-bug-report). Fill out [the required template](https://github.com/X-CASH-official/.github/blob/master/ISSUE_TEMPLATE/bug_report.md). The provided information helps us targeting the issue quicker.
 
 #### Before Submitting A Bug Report
 
@@ -81,11 +81,13 @@ Explain the problem and include as many details as possible to help the project 
 
 ### Code Contribution & Bounties 👨‍💻
 
-You will be able to contribute to all issues, but some of them will be associated with a bounty. These issues will have the `bounty` label, and will be assigned to a contributor after the project team has decided following the [bounty assignation process](). 
+You will be able to contribute to all issues, but some of them will be associated with a bounty. These issues will have the `bounty` tag, and will be assigned to a contributor after the project team has decided following the [bounty assignation process](). 
 
-Please refer to the **[Builder's Program]()** for mor information on how to contribute to these bounties.
+Please refer to the **[Builder's Program]()** for more information on how to contribute to these bounties.
 
 ### Pull Requests
+
+> **Before creating a PR:** Make sure that your pull request is fixing and issue or is relating to a feature request listed in the repository's issues. If not, please create an issue to on your 
 
 Please follow these steps to have your contribution considered by the maintainers:
 
@@ -97,7 +99,17 @@ While the prerequisites above must be satisfied prior to having your pull reques
 
 ## Commit Styleguide
 
-> These guidelines are based from the Angular Convention [commit guideline](https://github.com/angular/angular/blob/master/CONTRIBUTING.md#commit)
+### Signing Commits *(optional)*
+
+> This is not mandatory but highly recommended for every project you are working on.
+
+Please sign your commits when you are pushing new changes to your branch. You can follow a tutorial [**here**](https://help.github.com/en/github/authenticating-to-github/signing-commits)
+
+When you sign your Git commit, you can prove that the code you submitted came from you and wasn't altered while you were transferring it. You also can prove that you submitted the code and not someone else.
+
+### Writing Comprehensive Commits
+
+> These guidelines are based on the Angular Convention [commit guideline](https://github.com/angular/angular/blob/master/CONTRIBUTING.md#commit)
 
 Please use the following guidelines to format all your commit. This helps the maintaners quickly gathering what the commit relates, and bring some readibility to the overall project: 
 
