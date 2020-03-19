@@ -109,6 +109,10 @@ An X-Cash Foundation team member will then review the application and assign the
 
 Once the issue has been [assigned](#issue-assignation-process), the contributor can start working locally on its own branch of the repository.
 
+First of all, it is recommended to fork the `develop` branch of the repository to your local GitHub account, then create a new branch in your local repository.
+
+> Pull changes from the upstream branch regularly to avoid merges conflict and to stay up to date. You can follow a tutorial [**here**](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork)
+
 The contributor will need to create a new branch based of the `develop` branch of the current repository. 
 
 The new branch should follow the X-Cash Foundation naming convention:
@@ -126,7 +130,7 @@ where `<type>` can be:
 * **test** (when adding missing tests)
 * **chore** (maintain repository, changed CI configuration, ...)
 
-And `<subject>` is the title or a 3 words maximum summary of the issue.
+And `<subject>` is the title or a four (4) words maximum summary of the issue.
 
 **Branch Name Example:** 
 
@@ -137,7 +141,7 @@ feat/currency-conversion
 
 #### Pull Requests
 
-> **Before creating a PR:** Make sure that your pull request is fixing and issue or is relating to a feature request listed in the repository's issues. If not, please create an issue to on your 
+> **Before creating a PR:** Make sure that your pull request is fixing and issue or is relating to a feature request listed in the repository's issues. If not, please create an issue prior to creating the PR.  You can also create a PR even if your changes are not completely done, if you need an early review.
 
 Please follow these steps to have your contribution considered by the maintainers:
 
