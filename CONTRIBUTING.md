@@ -98,8 +98,8 @@ When an issue is submitted to the repository, the team will review it and assign
 Contributors that wish to start working on an issue will have to write a short application on said issue discussion thread to describe how they plan on undertaking the bug/feature.
 
 The application message should contain: 
-- A short summary of the contributor skills;
-- A broad idea of the process/method to correct the issue.
+- A short summary of the contributor skills & experience;
+- A broad idea of the approach to correct the issue, estimated time to completion.
 
 An X-Cash Foundation team member will then review the application and assign the issue to **one contributor**.
 
